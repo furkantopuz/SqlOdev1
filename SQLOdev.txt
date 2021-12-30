@@ -22,3 +22,8 @@ Select DISTINCT Count(replacement_cost) From film
 Select COUNT(*) From film WHere title like 'T%' AND rating = 'G'
 Select Count(*) From country Where Length(country) = 5
 Select Count(*) From city Where city like '%R' or city like '%r'
+
+//Ödev5
+Select * From film where title LIKE '%n' order by length LIMIT 5
+Select * From film where title LIKE '%n' order by length OFFSET 5 LIMIT 5
+Select * From customer where store_id = 1 order by last_name desc LIMIT 4
