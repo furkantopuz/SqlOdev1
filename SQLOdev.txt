@@ -27,3 +27,9 @@ Select Count(*) From city Where city like '%R' or city like '%r'
 Select * From film where title LIKE '%n' order by length LIMIT 5
 Select * From film where title LIKE '%n' order by length OFFSET 5 LIMIT 5
 Select * From customer where store_id = 1 order by last_name desc LIMIT 4
+
+//Ödev6
+Select AVG(rental_rate) From film 
+Select COUNT(*) From film Where title like 'C%'
+Select MAX(length) From film Where rental_rate = 0.99 
+Select COUNT(DISTINCT replacement_cost) From film Where length > 150
