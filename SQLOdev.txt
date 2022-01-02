@@ -40,3 +40,10 @@ Select replacement_cost, Count(*) From film Group by replacement_cost HAVING COU
 Select store_id, Count(*) From customer Group by store_id
 Select country_id, Count(city) From city Group by country_id order by Count(city) desc LIMIT 1
 
+//Ödev8
+CREATE TABLE employee (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  email VARCHAR(100),
+  birthday DATE
+);
