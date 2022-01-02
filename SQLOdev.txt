@@ -33,3 +33,10 @@ Select AVG(rental_rate) From film
 Select COUNT(*) From film Where title like 'C%'
 Select MAX(length) From film Where rental_rate = 0.99 
 Select COUNT(DISTINCT replacement_cost) From film Where length > 150
+
+//Ödev7
+Select rating From film Group By rating
+Select replacement_cost, Count(*) From film Group by replacement_cost HAVING COUNT(*) > 50;
+Select store_id, Count(*) From customer Group by store_id
+Select country_id, Count(city) From city Group by country_id order by Count(city) desc LIMIT 1
+
