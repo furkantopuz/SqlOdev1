@@ -52,3 +52,8 @@ CREATE TABLE employee (
 Select ct.city,cn.country From country as cn INNER JOIN city as ct on ct.country_id = cn.country_id
 Select py.payment_id, ct.first_name,ct.last_name From customer as ct INNER JOIN payment as py on py.customer_id = ct.customer_id
 Select rt.rental_id, ct.first_name,ct.last_name From customer as ct INNER JOIN rental as rt on rt.customer_id = ct.customer_id
+
+//Ödev10
+Select ct.city,cn.country From country as cn LEFT JOIN city as ct on ct.country_id = cn.country_id
+Select py.payment_id, ct.first_name,ct.last_name From customer as ct RIGHT JOIN payment as py on py.customer_id = ct.customer_id
+Select rt.rental_id, ct.first_name,ct.last_name From customer as ct FULL JOIN rental as rt on rt.customer_id = ct.customer_id
